@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Bar IES ATENEA</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <!-- 
+    ##############################
+    #         CABECERA           #
+    ##############################
+        Un grupo de navegación o contenido introductorio. 
+        Un elemento header normalmente contiene una sección de encabezado 
+        (un elemento h1-h6 o un elemento hgroup), 
+        pero puede contener otro tipo de elementos, 
+        como una tabla de contenidos, 
+        un formulario de búsqueda 
+        o cualquier logo importante.
+        En HTML5 usariamos la etiqueta HEADER
+    -->
+        <div id="cabecera">
+            <img src="images/aceitera.png" alt="Muestra una imagen de una aceitera">
+            <h1>Bar <span class='spanmorado'>I.E.S ATENEA</span></h1>
+        </div>
+        <!-- 
+    ##############################
+    #         NAVEGACIÓN         #
+    ##############################
+El elemento <nav> representa una sección de una página 
+que enlaza con otras páginas o partes de la misma página: 
+una sección con enlaces de navegación.
+-->
+        <div id="nav">
+            <ul id="menu">
+                <li><a class="active" href="#informacion">Información</a></li>
+                <li><a href="#bocadillos">Bocadillos</a></li>
+                <li><a href="#desayuno">Desayuno</a></li>
+                <li><a href="#reserva">Reserva tu pedido</a></li>
+                <li><a href="#video">Vídeo</a></li>
+            </ul>
+        </div>
+
+        <div id="contenido">
+            <div id="informacion" class="apartado">
+                <h1>Información Codiv-19</h1>
+                <img src="images/informacion.jpg" alt="Imagen donde se muestra ua chica con una mascarilla">
+                <p>
+                    <mark>Barra</mark> se recomienda el menor número de personas en la barra si esta no tiene un tamaño que permita la separación entre trabajadores. Se valorará si se mantiene el servicio en mesa o se pide al cliente que recoja el pedido
+                    en la barra, para evitar el acercamiento entre personal y clientes.
+                </p>
+                <p>
+                    <mark>Sala</mark> se deberá reestructurar la disposición de las mesas en la sala con el fin de respetar el régimen de distancias entre ellas, que deberá ser de 1,5 metros. Habrá geles de hidroalcohol en la entrada del local y a la
+                    salida de los aseos.
+                </p>
+                <p>
+                    <mark> Recepción de pedidos:</mark> es importante establecer diferentes rangos horarios para la recepción de las mercancías para poder desinfectar la zona de recepción entre pedido y pedido.
+                    Se eliminarán los envoltorios de los productos antes de que entren en el local, se desinfectarán, uno por uno, y los productos frescos entrarán en box de plástico previamente desinfectado.
+                </p>
+
+            </div>
+
+            <div id="bocadillos" class="apartado">
+                <h1>Bocadillos</h1>
+                <img src="images/bocadillo.jpg" alt="Imagen donde se muestra un bocadillo">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Bocadillo</td>
+                        <td>Ingredientes</td>
+                        <td>precio</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Baguete de Chorizo</td>
+                        <td>Chorizo</td>
+                        <td>1.25</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Baguete de Baicon</td>
+                        <td>Baicon</td>
+                        <td>1.25</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="desayuno" class="apartado">
+                <h1>Desayuno</h1>
+                <img src="images/desayuno.jpg" alt="Imagen donde se muestra un bocadillo">
+
+                <ul>
+                    <li>Café y tostada jamón
+                        <ul>
+                            <li>Entera: 3.20</li>
+                            <li>Media: 2.80</li>
+                        </ul>
+                    </li>
+                    <li>Café y tostada mechado
+                        <ul>
+                            <li>Entera: 3.00</li>
+                            <li>Media: 2.50</li>
+                        </ul>
+                    </li>
+                    <li>Café y tostada mantequilla
+                        <ul>
+                            <li>Entera: 2.00</li>
+                            <li>Media: 1.80</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="reserva" class="apartado">
+                <h1>Reserva tu pedidos</h1>
+                <img src="images/reserva.jpg" alt="Imagen donde se muestra un bocadillo">
+
+
+                <form action="#" target="" method="get" name="formDatosPersonales">
+
+
+                    <label for="alumno">IdAlumno</label>
+                    <input type="number" type="number" min="999" max="9999" name="alumno" id="alumno" placeholder="identificador del alumno" />
+                    <br>
+                    <label for="bocadillo-select">Elige bocadillo:</label>
+
+                    <select name="bocadillo" id="bocadillo-select">
+                    <option value="">--Elige bocadillo--</option>
+                    <option value="chorizo">Chorizo</option>
+                    <option value="beacon">Beacon</option>
+                    <option value="choped">Choped</option>
+                    </select>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="Deja una nota sobre el pedido" maxlength="300"></textarea>
+
+                    <input type="submit" name="enviar" value="enviar datos" />
+                </form>
+            </div>
+
+            <div id="video" class="apartado">
+                <h1>Insertar Web externa con Iframes</h1>
+                <iframe width="560" height="315" src="https://www.iatenea.es/" title="IES.Atenea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+               
+            </div>
+
+
+            <br>
+        </div>
+        <!-- 
+         ##############################
+         #      PIE DE PÁGINA         #
+         ##############################
+
+    En HTML5 usamos la etiqueta <footer>    
+    Representa el pie de una sección. Un pie tradicionalmente contiene 
+    información acerca de su sección, como quién escribió el contenido, 
+    enlaces relacionados, copyright y similares.
+  -->
+        <div id="pie">
+            <a href="https://www.iatenea.es/"><img src="images/logo.png" alt="Muestra el logo IES Alhadra"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
